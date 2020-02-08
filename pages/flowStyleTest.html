@@ -16,16 +16,21 @@ function addSecondSubTree(){
 }
 
 function addThirdSubTree(){
-  document.getElementById("items").innerHTML ="<ul><li><a href='#' onclick = 'addFirstSubTree()'>1</a><ul><li><a href='#' onclick = 'addSecondSubTree()'>2</a><ul><li><a href='#' onclick = 'addThirdSubTree()'>Gavin Lindberg, CFO, EMEA</a><ul><li><a href='#'>Filipe Lima</a><ul><li><a href='#'>Roberto Boem</a><ul><li><a href='#'>Canci Melief</a><a href='#'>Damon Maddison</a><ul><li><a href='#'>Robin Andersson</a><a href='#'>Aileen Soteco</a><a href='#'>Xin Ye</a></li></ul></li></ul>  </li></ul></li></ul></li></ul></li></ul></li></ul>";
+
+  	document.getElementById("items").innerHTML ="<ul><li><a href='#' onclick = 'addFirstSubTree()'>1</a><ul><li><a href='#' onclick = 'addSecondSubTree()'>2</a><ul><li><a href='#' onclick = 'hideThirdSubTree()'>Gavin Lindberg CFO, EMEA</a><ul><li><a href='#'>Filipe Lima</a><ul><li><a href='#'>Roberto Boem</a><ul><li><a href='#'>Canci Melief</a><a href='#'>Damon Maddison</a><ul><li><a href='#'>Robin Andersson</a></li><li><a href='#'>Aileen Soteco</a></li><li><a href='#'>Xin Ye</a></li></ul></li></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul>";
 
 
   // "<ul><li><a href='#'>3</a></li></ul><ul><li><a href='#'>3_1</a></li></ul>";
 }
 
-/*window.addEventListener("load", function () {
+function hideThirdSubTree(){
+	document.getElementById("items").innerHTML = "<ul><li><a href='#' onclick = 'addFirstSubTree()'>1</a><ul><li><a href='#' onclick = 'addSecondSubTree()'>2</a><ul><li><a href='#' onclick = 'addThirdSubTree()'>Gavin Lindberg, CFO, EMEA</a></li></ul></li></ul></li></ul>";
+}
+
+window.addEventListener("load", function () {
         document.getElementById("items").innerHTML = "<ul><li><a href='#' onclick = 'addFirstSubTree()'>1</a><ul><li><a href='#' onclick = 'addSecondSubTree()'>2</a><ul><li><a href='#' onclick = 'addThirdSubTree()'>Gavin Lindberg, CFO, EMEA</a></li></ul></li></ul></li></ul>";
 
-       });      */
+       });
 
 
 </script>
@@ -34,7 +39,7 @@ function addThirdSubTree(){
 
 <div class="items" id = "items">
 
-	<ul><li><a href='#' onclick = 'addFirstSubTree()'>1</a>
+	<!--<ul><li><a href='#' onclick = 'addFirstSubTree()'>1</a>
 		<ul><li><a href='#' onclick = 'addSecondSubTree()'>2</a>
 			<ul><li><a href='#' onclick = 'addThirdSubTree()'>Gavin Lindberg CFO, EMEA</a>
 				<ul><li><a href='#'>Filipe Lima</a>
@@ -50,7 +55,7 @@ function addThirdSubTree(){
 				</li></ul>
 				</li></ul>
 			</li></ul>
-		</li></ul>
+		</li></ul> -->
 </div>
 
 
