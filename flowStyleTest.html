@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<script>
+
+  function addFirstSubTree(){
+    document.getElementById("first").innerHTML = "<li><a href='#'>1_2</a>";
+}
+
+function addSecondSubTree(){
+  document.getElementById("second").innerHTML = "<a href='#'>2_1</a>";
+}
+
+function addThirdSubTree(){
+  document.getElementById("items").innerHTML ="<ul><li><a href='#' onclick = 'addFirstSubTree()'>1</a><ul><li><a href='#' onclick = 'addSecondSubTree()'>2</a><ul><li><a href='#' onclick = 'addThirdSubTree()'>Gavin Lindberg, CFO, EMEA</a><ul><li><a href='#'>Filipe Lima</a><ul><li><a href='#'>Roberto Boem</a><ul><li><a href='#'>Canci Melief</a><a href='#'>Damon Maddison</a><ul><li><a href='#'>Robin Andersson</a><a href='#'>Aileen Soteco</a><a href='#'>Xin Ye</a></li></ul></li></ul>  </li></ul></li></ul></li></ul></li></ul></li></ul>";
+
+
+  // "<ul><li><a href='#'>3</a></li></ul><ul><li><a href='#'>3_1</a></li></ul>";
+}
+
+/*window.addEventListener("load", function () {
+        document.getElementById("items").innerHTML = "<ul><li><a href='#' onclick = 'addFirstSubTree()'>1</a><ul><li><a href='#' onclick = 'addSecondSubTree()'>2</a><ul><li><a href='#' onclick = 'addThirdSubTree()'>Gavin Lindberg, CFO, EMEA</a></li></ul></li></ul></li></ul>";
+
+       });      */
+
+
+</script>
+
+<body>
+
+<div class="items" id = "items">
+
+	<ul><li><a href='#' onclick = 'addFirstSubTree()'>1</a>
+		<ul><li><a href='#' onclick = 'addSecondSubTree()'>2</a>
+			<ul><li><a href='#' onclick = 'addThirdSubTree()'>Gavin Lindberg CFO, EMEA</a>
+				<ul><li><a href='#'>Filipe Lima</a>
+					<ul><li><a href='#'>Roberto Boem</a>
+						<ul><li><a href='#'>Canci Melief</a>
+							<a href='#'>Damon Maddison</a>
+							<ul><li><a href='#'>Robin Andersson</a></li>
+								<li><a href='#'>Aileen Soteco</a></li>
+								<li><a href='#'>Xin Ye</a></li>
+							</ul>
+						</li></li></ul>
+					</li></ul>
+				</li></ul>
+				</li></ul>
+			</li></ul>
+		</li></ul>
+</div>
+
+
+</body>
+</html>
